@@ -91,8 +91,6 @@ namespace
 	    glCreateBuffers(1, &vboId);
         glNamedBufferStorage(vboId, amount * sizeof(float), data, 0);
 
-        glGenBuffers(1, &vboId);
-
         return vboId;
 	}
 }
