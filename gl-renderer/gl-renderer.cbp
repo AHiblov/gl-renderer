@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gl-renderer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="build/bin/Debug/gl-renderer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="scene scenes/forward-test debug" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="imgui_backend/include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="GLEW" />
+					<Add library="glfw" />
+					<Add library="imgui" />
+					<Add library="/home/artem/programmes/projects/graphics/statistics/build/bin/Release/libstatistics.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="build/bin/Release/gl-renderer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="scene scenes/forward-test" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="imgui_backend/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="GLEW" />
+					<Add library="glfw" />
+					<Add library="imgui" />
+					<Add library="/home/artem/programmes/projects/graphics/statistics/build/bin/Release/libstatistics.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="imgui_backend/include/imgui_impl_glfw.h" />
+		<Unit filename="imgui_backend/include/imgui_impl_opengl3.h" />
+		<Unit filename="imgui_backend/include/imgui_impl_opengl3_loader.h" />
+		<Unit filename="imgui_backend/src/imgui_impl_glfw.cpp" />
+		<Unit filename="imgui_backend/src/imgui_impl_opengl3.cpp" />
+		<Unit filename="include/app_parameters.h" />
+		<Unit filename="include/common_constants.h" />
+		<Unit filename="include/core.h" />
+		<Unit filename="include/data/chunk_margins.h" />
+		<Unit filename="include/data/heightmap.h" />
+		<Unit filename="include/data/mesh.h" />
+		<Unit filename="include/data/object_file_paths.h" />
+		<Unit filename="include/data/scene.h" />
+		<Unit filename="include/data/shader_properties.h" />
+		<Unit filename="include/data/terrain_file_paths.h" />
+		<Unit filename="include/data/texture.h" />
+		<Unit filename="include/data/visibility_flags.h" />
+		<Unit filename="include/editor_commands/copy_back_instance.h" />
+		<Unit filename="include/editor_commands/editor_command.h" />
+		<Unit filename="include/editor_commands/insert_instance_group.h" />
+		<Unit filename="include/editor_commands/insert_new_instance.h" />
+		<Unit filename="include/editor_commands/set_camera_position.h" />
+		<Unit filename="include/editor_core.h" />
+		<Unit filename="include/editor_scene_modifier.h" />
+		<Unit filename="include/graphics_lib/abstract_renderer.h" />
+		<Unit filename="include/graphics_lib/backend_teller.h" />
+		<Unit filename="include/graphics_lib/base_3d_renderer.h" />
+		<Unit filename="include/graphics_lib/deferred_renderer.h" />
+		<Unit filename="include/graphics_lib/editor_frame_renderer.h" />
+		<Unit filename="include/graphics_lib/forward_renderer.h" />
+		<Unit filename="include/graphics_lib/frame_renderer.h" />
+		<Unit filename="include/graphics_lib/light_setters.h" />
+		<Unit filename="include/graphics_lib/main_renderer_builder.h" />
+		<Unit filename="include/graphics_lib/message_callback.h" />
+		<Unit filename="include/graphics_lib/operations/mesh_operations.h" />
+		<Unit filename="include/graphics_lib/operations/particle_operations.h" />
+		<Unit filename="include/graphics_lib/operations/shader_operations.h" />
+		<Unit filename="include/graphics_lib/operations/terrain_operations.h" />
+		<Unit filename="include/graphics_lib/operations/texture_operations.h" />
+		<Unit filename="include/graphics_lib/postprocessing_renderer.h" />
+		<Unit filename="include/graphics_lib/postprocessing_renderer_builder.h" />
+		<Unit filename="include/graphics_lib/rendering_scene_builder.h" />
+		<Unit filename="include/graphics_lib/shader_manager.h" />
+		<Unit filename="include/graphics_lib/splash_renderer.h" />
+		<Unit filename="include/graphics_lib/splash_renderer_builder.h" />
+		<Unit filename="include/graphics_lib/uniform_setters.h" />
+		<Unit filename="include/graphics_lib/videocard_data/component_indices.h" />
+		<Unit filename="include/graphics_lib/videocard_data/object_rendering_data.h" />
+		<Unit filename="include/graphics_lib/videocard_data/particle_rendering_data.h" />
+		<Unit filename="include/graphics_lib/videocard_data/postprocessing_shader_ids.h" />
+		<Unit filename="include/graphics_lib/videocard_data/quad_subdivision.h" />
+		<Unit filename="include/graphics_lib/videocard_data/rendering_scene.h" />
+		<Unit filename="include/graphics_lib/videocard_data/shader_ids.h" />
+		<Unit filename="include/loaders/mesh_loader.h" />
+		<Unit filename="include/loaders/scene_loader.h" />
+		<Unit filename="include/loaders/shader_loader.h" />
+		<Unit filename="include/loaders/terrain_loader.h" />
+		<Unit filename="include/loaders/texture_loader.h" />
+		<Unit filename="include/log.h" />
+		<Unit filename="include/main_component.h" />
+		<Unit filename="include/managers/object_manager.h" />
+		<Unit filename="include/managers/particle_manager.h" />
+		<Unit filename="include/managers/scene_manager.h" />
+		<Unit filename="include/managers/terrain_manager.h" />
+		<Unit filename="include/simulation/simulation_model.h" />
+		<Unit filename="include/simulation/simulation_thread.h" />
+		<Unit filename="include/statistics.h" />
+		<Unit filename="include/thirdparty/glew_tools.h" />
+		<Unit filename="include/thirdparty/glfw_tools.h" />
+		<Unit filename="include/thirdparty/imgui_tools.h" />
+		<Unit filename="include/utils/chunk_tools.h" />
+		<Unit filename="include/utils/commandline_parser.h" />
+		<Unit filename="include/utils/editor_tools.h" />
+		<Unit filename="include/utils/instance_group_tools.h" />
+		<Unit filename="include/utils/math_tools.h" />
+		<Unit filename="include/visibility/camera_controller.h" />
+		<Unit filename="include/visibility/region_visibility_calculation.h" />
+		<Unit filename="src/core.cpp" />
+		<Unit filename="src/editor_commands/copy_back_instance.cpp" />
+		<Unit filename="src/editor_commands/insert_instance_group.cpp" />
+		<Unit filename="src/editor_commands/insert_new_instance.cpp" />
+		<Unit filename="src/editor_commands/set_camera_position.cpp" />
+		<Unit filename="src/editor_core.cpp" />
+		<Unit filename="src/editor_scene_modifier.cpp" />
+		<Unit filename="src/graphics_lib/base_3d_renderer.cpp" />
+		<Unit filename="src/graphics_lib/deferred_renderer.cpp" />
+		<Unit filename="src/graphics_lib/editor_frame_renderer.cpp" />
+		<Unit filename="src/graphics_lib/forward_renderer.cpp" />
+		<Unit filename="src/graphics_lib/frame_renderer.cpp" />
+		<Unit filename="src/graphics_lib/light_setters.cpp" />
+		<Unit filename="src/graphics_lib/main_renderer_builder.cpp" />
+		<Unit filename="src/graphics_lib/message_callback.cpp" />
+		<Unit filename="src/graphics_lib/operations/mesh_operations.cpp" />
+		<Unit filename="src/graphics_lib/operations/particle_operations.cpp" />
+		<Unit filename="src/graphics_lib/operations/shader_operations.cpp" />
+		<Unit filename="src/graphics_lib/operations/terrain_operations.cpp" />
+		<Unit filename="src/graphics_lib/operations/texture_operations.cpp" />
+		<Unit filename="src/graphics_lib/postprocessing_renderer.cpp" />
+		<Unit filename="src/graphics_lib/postprocessing_renderer_builder.cpp" />
+		<Unit filename="src/graphics_lib/rendering_scene_builder.cpp" />
+		<Unit filename="src/graphics_lib/shader_manager.cpp" />
+		<Unit filename="src/graphics_lib/splash_renderer.cpp" />
+		<Unit filename="src/graphics_lib/splash_renderer_builder.cpp" />
+		<Unit filename="src/graphics_lib/uniform_setters.cpp" />
+		<Unit filename="src/loaders/mesh_loader.cpp" />
+		<Unit filename="src/loaders/scene_loader.cpp" />
+		<Unit filename="src/loaders/shader_loader.cpp" />
+		<Unit filename="src/loaders/terrain_loader.cpp" />
+		<Unit filename="src/loaders/texture_loader.cpp" />
+		<Unit filename="src/log.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/main_component.cpp" />
+		<Unit filename="src/managers/object_manager.cpp" />
+		<Unit filename="src/managers/particle_manager.cpp" />
+		<Unit filename="src/managers/scene_manager.cpp" />
+		<Unit filename="src/managers/terrain_manager.cpp" />
+		<Unit filename="src/simulation/simulation_thread.cpp" />
+		<Unit filename="src/thirdparty/glew_tools.cpp" />
+		<Unit filename="src/thirdparty/glfw_tools.cpp" />
+		<Unit filename="src/thirdparty/imgui_tools.cpp" />
+		<Unit filename="src/utils/chunk_tools.cpp" />
+		<Unit filename="src/utils/commandline_parser.cpp" />
+		<Unit filename="src/utils/editor_tools.cpp" />
+		<Unit filename="src/utils/instance_group_tools.cpp" />
+		<Unit filename="src/utils/math_tools.cpp" />
+		<Unit filename="src/visibility/camera_controller.cpp" />
+		<Unit filename="src/visibility/region_visibility_calculation.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

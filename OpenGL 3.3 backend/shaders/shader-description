@@ -1,0 +1,198 @@
+40
+2D
+shaders/2d-vert.glsl
+shaders/2d-frag.glsl
+2d
+
+sky
+shaders/forward/sky-vert.glsl
+shaders/forward/sky-frag.glsl
+sky
+
+directional-forward
+shaders/forward/directional-basic-vert.glsl
+shaders/forward/directional-basic-frag.glsl
+directional
+
+directional-specular-forward
+shaders/forward/directional-specular-vert.glsl
+shaders/forward/directional-specular-frag.glsl
+directional specular
+
+directional-normalmap-forward
+shaders/forward/directional-normalmap-vert.glsl
+shaders/forward/directional-normalmap-frag.glsl
+directional normalmap
+
+directional-instancing-forward
+shaders/forward/directional-instancing-vert.glsl
+shaders/forward/directional-instancing-frag.glsl
+directional instancing
+
+directional-enhanced-terrain-forward
+shaders/forward/directional-enhanced-terrain-vert.glsl
+shaders/forward/directional-enhanced-terrain-frag.glsl
+directional texture-bombing-and-triplanar-mapping
+
+directional-small-waves-forward
+shaders/forward/directional-small-waves-vert.glsl
+shaders/forward/directional-small-waves-frag.glsl
+directional small-waves
+
+directional-glitter-forward
+shaders/forward/directional-glitter-vert.glsl
+shaders/forward/directional-glitter-frag.glsl
+directional glitter
+
+directional-fog-forward
+shaders/forward/directional-fog-vert.glsl
+shaders/forward/directional-fog-frag.glsl
+directional fog
+
+directional-normalmap-fog-forward
+shaders/forward/directional-normalmap-fog-vert.glsl
+shaders/forward/directional-normalmap-fog-frag.glsl
+directional normalmap fog
+
+directional-instancing-fog-forward
+shaders/forward/directional-instancing-fog-vert.glsl
+shaders/forward/directional-instancing-fog-frag.glsl
+directional instancing fog
+
+directional-enhanced-terrain-fog-forward
+shaders/forward/directional-enhanced-terrain-fog-vert.glsl
+shaders/forward/directional-enhanced-terrain-fog-frag.glsl
+directional texture-bombing-and-triplanar-mapping fog
+
+directional-small-waves-fog-forward
+shaders/forward/directional-small-waves-fog-vert.glsl
+shaders/forward/directional-small-waves-fog-frag.glsl
+directional small-waves fog
+
+
+point-forward
+shaders/forward/point-basic-vert.glsl
+shaders/forward/point-basic-frag.glsl
+point
+
+point-specular-forward
+shaders/forward/point-specular-vert.glsl
+shaders/forward/point-specular-frag.glsl
+point specular
+
+point-normalmap-forward
+shaders/forward/point-normalmap-vert.glsl
+shaders/forward/point-normalmap-frag.glsl
+point normalmap
+
+point-instancing-forward
+shaders/forward/point-instancing-vert.glsl
+shaders/forward/point-instancing-frag.glsl
+point instancing
+
+point-enhanced-terrain-forward
+shaders/forward/point-enhanced-terrain-vert.glsl
+shaders/forward/point-enhanced-terrain-frag.glsl
+point texture-bombing-and-triplanar-mapping
+
+point-small-waves-forward
+shaders/forward/point-small-waves-vert.glsl
+shaders/forward/point-small-waves-frag.glsl
+point small-waves
+
+point-glitter-forward
+shaders/forward/point-glitter-vert.glsl
+shaders/forward/point-glitter-frag.glsl
+point glitter
+
+point-fog-forward
+shaders/forward/point-fog-vert.glsl
+shaders/forward/point-fog-frag.glsl
+point fog
+
+point-normalmap-fog-forward
+shaders/forward/point-normalmap-fog-vert.glsl
+shaders/forward/point-normalmap-fog-frag.glsl
+point normalmap fog
+
+point-instancing-fog-forward
+shaders/forward/point-instancing-fog-vert.glsl
+shaders/forward/point-instancing-fog-frag.glsl
+point instancing fog
+
+point-enhanced-terrain-fog-forward
+shaders/forward/point-enhanced-terrain-fog-vert.glsl
+shaders/forward/point-enhanced-terrain-fog-frag.glsl
+point texture-bombing-and-triplanar-mapping fog
+
+point-small-waves-fog-forward
+shaders/forward/point-small-waves-fog-vert.glsl
+shaders/forward/point-small-waves-fog-frag.glsl
+point small-waves fog
+
+
+directional-deferred
+shaders/deferred/directional-basic-geom-vert.glsl
+shaders/deferred/directional-basic-geom-frag.glsl
+directional deferred-geometry
+
+directional-normalmap-deferred
+shaders/deferred/directional-normalmap-geom-vert.glsl
+shaders/deferred/directional-normalmap-geom-frag.glsl
+directional normalmap deferred-geometry
+
+directional-instancing-deferred
+shaders/deferred/directional-instancing-geom-vert.glsl
+shaders/deferred/directional-instancing-geom-frag.glsl
+directional instancing deferred-geometry
+
+directional-enhanced-terrain-deferred
+shaders/deferred/directional-enhanced-terrain-geom-vert.glsl
+shaders/deferred/directional-enhanced-terrain-geom-frag.glsl
+directional texture-bombing-and-triplanar-mapping deferred-geometry
+
+directional-small-waves-deferred
+shaders/deferred/directional-small-waves-geom-vert.glsl
+shaders/deferred/directional-small-waves-geom-frag.glsl
+directional small-waves deferred-geometry
+
+directional-light-pass
+shaders/fullscreen-vert.glsl
+shaders/deferred/directional-light.glsl
+deferred-light directional
+
+directional-fog-light-pass
+shaders/fullscreen-vert.glsl
+shaders/deferred/directional-fog-light.glsl
+deferred-light directional fog
+
+point-light-pass
+shaders/deferred/point-light-vert.glsl
+shaders/deferred/point-light-frag.glsl
+deferred-light point
+
+stencil
+shaders/deferred/stencil-pass-vert.glsl
+shaders/deferred/stencil-pass-frag.glsl
+--
+
+
+grayscale
+shaders/fullscreen-vert.glsl
+shaders/postprocessing/grayscale-frag.glsl
+postprocessing:grayscale
+
+vignette
+shaders/fullscreen-vert.glsl
+shaders/postprocessing/vignette-frag.glsl
+postprocessing:vignette
+
+drops-on-lens
+shaders/fullscreen-vert.glsl
+shaders/postprocessing/drops-on-lens-frag.glsl
+postprocessing:drops-on-lens
+
+emboss
+shaders/fullscreen-vert.glsl
+shaders/postprocessing/emboss-frag.glsl
+postprocessing:emboss
